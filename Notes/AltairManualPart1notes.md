@@ -45,3 +45,36 @@
 - Systems using eight or sixteen digits work well for complex logic systems.
 - You use them to shorten long binary numbers.
 
+# D. THE BINARY SYSTEM
+
+- The computer processes nearly all operations in binary.
+- A typical binary number has eight bits.
+- You call a fixed length binary number a word or a byte.
+- The computer processes and stores words.
+- A binary word like 10111010 may seem meaningless.
+- Binary uses only two digits.
+- Binary works simpler than decimal.
+- You derive binary for decimals 0 to 20 by adding one each time.
+- You start at 0.
+- Decimal 0 equals binary 0.
+- Decimal 1 equals binary 1.
+- You run out of digits, so start a new column at 2.
+- Decimal 2 equals binary 10.
+- Decimal 3 equals binary 11.
+- You add a third column for decimal 4.
+- Decimal 4 equals binary 100.
+- You continue this up to 20.
+
+
+
+- You convert binary to decimal by summing powers of two.
+- Each bit shows a power of two.
+- For example binary 10011 equals:
+  1 times 2 raised to the fourth power
+  plus 0 times 2 raised to the third power
+  plus 0 times 2 raised to the second power
+  plus 1 times 2 raised to the first power
+  plus 1 times 2 raised to the zeroth power
+- That equals 16 plus 0 plus 0 plus 2 plus 1
+- That equals decimal 19
+
