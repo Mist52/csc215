@@ -36,3 +36,12 @@
 - Flip-flops built from NAND gates provide memory.
 - Monostable and astable circuits manage timing and switching.
 
+# C. NUMBER SYSTEMS
+
+- Ancient humans used fingers to count. That gave us ten digits.
+- Number systems can use any digit count.
+- Electronic circuits use two states so they match a two-digit system.
+- You call the two digits bits in binary.
+- Systems using eight or sixteen digits work well for complex logic systems.
+- You use them to shorten long binary numbers.
+
