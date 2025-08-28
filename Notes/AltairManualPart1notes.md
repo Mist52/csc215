@@ -28,4 +28,11 @@
 - NOT reverses logic: true becomes false, false becomes true.
 
 
+## B. Electronic Logic
+- Gates implemented with transistor circuits.
+- Symbols exist for AND, OR, NOT.
+- NAND and NOR combine basic gates.
+- XOR (exclusive-OR) adds input bits.
+- Flip-flops built from NAND gates provide memory.
+- Monostable and astable circuits manage timing and switching.
 
