@@ -1,3 +1,24 @@
+# Introduction
+
+- Advances in semiconductor technology led to the ALTAIR 8800.
+- It was the first economical computer offered in both kit and assembled form.
+- The Intel 8080 Microcomputer is its core.
+- The 8080 is a CPU on a single silicon chip.
+- It uses N-channel LSI MOS technology.
+- The 8080 was a major breakthrough.
+
+- This manual prepares both novices and experienced users.
+- The ALTAIR 8800 has 78 machine language instructions.
+- It performs operations not found in conventional mini-computers.
+- A novice can learn to load a program after reading the manual.
+
+- Users come from different backgrounds.
+- Some have electronics experience but no programming knowledge.
+- Others have programming experience but little electronics knowledge.
+- The manual addresses both groups.
+
+
+
 # A. LOGIC
 
 - Nineteenth century mathematician George Boole studied logical expressions and numeric operations.
