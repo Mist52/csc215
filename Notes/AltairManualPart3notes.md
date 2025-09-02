@@ -95,5 +95,21 @@
  - Stack Addressing (Subroutines):
     - CALL pushes return address to stack; RETURN pops it to resume the main program.
 
+## E. Operating Hints
 
+ - Proofreading Programs:
+   - Always proofread after entering a program.
+   - RESET (if program starts at address 0) or set the ADDRESS switches and EXAMINE the starting address.
+   - Check the DATA LEDs against the expected bit pattern.
+   - Use EXAMINE NEXT to check subsequent steps.
+   - To correct errors: Re-enter the correct bit pattern on DATA switches, actuate DEPOSIT, and continue proofreading with EXAMINE NEXT.
+ - Using NOPs (No Operation):
+   - NOPs are seemingly useless instructions that do nothing.
+   - Scatter NOPs in a complicated program to save time when debugging.
+   - If a new instruction is needed, replace a NOP with it.
+   - Use multiple NOPs in a row if a multi-byte instruction might be needed (e.g., use three NOPs for a potential LDA instruction).
+ - Debugging Programs:
+   - Debugging is needed when a program fails to execute correctly due to errors ("bugs").
+   - Use the SINGLE STEP switch to step through the program machine cycle by machine cycle.
+   - Observe the eight STATUS LEDs to detect illegal entries, improper program organization, and other errors.
  
