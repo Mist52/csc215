@@ -31,6 +31,42 @@
 | HLDA | A HOLD has been ACKNOWLEDGED when this LED is glowing. |
 
 
+## B. LOADING A SAMPLE PROGRAM
+
+### Simple Addition Program
+ - Purpose: Adds two numbers from memory and stores the sum.
+ - Code (Mnemonics): LDA, MOV (A→B), LDA, ADD (B+A), STA, JMP
+ - Key Mnemonics:
+   - LDA: Load Accumulator from Memory
+   - MOV: Move Accumulator to Register B
+   - ADD: Add Register B to Accumulator
+   - STA: Store Accumulator to Memory
+   - JMP: Jump to Address
+ - JMP Use: Loops the program continuously.
+ - Memory Map: Program starts at 0. Example: Number 1 at 128, Number 2 at 129, Result at 130.
+ - Loading the Program:
+   - RESET.
+   - Enter bit pattern via DATA/ADDRESS switches.
+   - DEPOSIT.
+   - Repeat with DEPOSIT NEXT for each step.
+ - Loading Data:
+   - Set DATA/ADDRESS switches to memory address.
+   - EXAMINE.
+   - Enter the number.
+   - DEPOSIT.
+   - Use DEPOSIT NEXT for sequential addresses.
+ - Running:
+   - RESET.
+   - RUN.
+   - STOP.
+   - EXAMINE the result address to see the answer.
+ - Binary Multiply Program
+
+ - Multiplies two numbers.
+ - Uses registers A, D, E, B, H, L.
+ - Involves shifting, rotating, conditional jumps.
+ - Result stored at memory locations 100 and 101 (octal).
+
 ## C. Using Memory
 
  - Memory's Vital Role: Memory is crucial for efficient computer operation.
