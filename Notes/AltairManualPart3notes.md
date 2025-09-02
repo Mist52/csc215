@@ -30,6 +30,19 @@
 | WAIT | The CPU is in a WAIT state when this LED is glowing.|
 | HLDA | A HOLD has been ACKNOWLEDGED when this LED is glowing. |
 
+## 3A. Status LEDS
+| LED | Definition |
+|--------|---------|
+| MEMR | The memory bus will be used for memory read data. |
+| INP | The address bus containing the address of an input device. The input data should be placed on the data bus when the data bus is in the input mode. |
+| M1 | The CPU is processing the first machine cycle of an instruction. |
+| OUT | The address contains the address of an output device and the data bus will contain the output data when the CPU is ready. |
+| HLTA | A HALT instruction has been executed and acknowledged. |
+| STACK | The address bus holds the Stack Pointer’s push-down stack address. |
+| WO | Operation in the current machine cycle will be a WRITE memory or OUTPUT function. Otherwise, a READ memory or INPUT operation will occur. |
+| INT | An INTERRUPT request has been acknowledged. |
+
+
 
 ## B. LOADING A SAMPLE PROGRAM
 
