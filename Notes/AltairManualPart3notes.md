@@ -12,9 +12,9 @@
 
 ## C. Using Memory
 
--Memory's Vital Role: Memory is crucial for efficient computer operation.
--High-Level vs. Machine Language: Higher-level languages automate memory address tracking, while machine language requires manual programmer management .
--Memory Mapping Defined: Memory mapping is a technique for tracking what's stored in memory by assigning data types to specific memory blocks .
--Purpose of Memory Mapping: It organizes available memory into an efficient and accessible storage medium .
--Example Memory Map (ALTAIR 8800): Programs (first 100 words), subroutines (second 100 words), and data (remaining 56 words) in a 256-word memory . Blocks can be modified as needed .
--Creating and Updating Maps: Create a memory map each time you change the program, noting memory space for program, subroutines, and data in a table or chart, and update the table when the memory organization is modified . 
+ - Memory's Vital Role: Memory is crucial for efficient computer operation.
+ - High-Level vs. Machine Language: Higher-level languages automate memory address tracking, while machine language requires manual programmer management .
+ - Memory Mapping Defined: Memory mapping is a technique for tracking what's stored in memory by assigning data types to specific memory blocks .
+ - Purpose of Memory Mapping: It organizes available memory into an efficient and accessible storage medium .
+ - Example Memory Map (ALTAIR 8800): Programs (first 100 words), subroutines (second 100 words), and data (remaining 56 words) in a 256-word memory . Blocks can be modified as needed .
+ - Creating and Updating Maps: Create a memory map each time you change the program, noting memory space for program, subroutines, and data in a table or chart, and update the table when the memory organization is modified . 
