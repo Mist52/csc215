@@ -24,5 +24,8 @@ FA # 07 JM          Jump to address 0010 IF the Sign flag is set to 1 (the sign 
 00 # 14 (address)   High byte
 76 # 15 HLT         Halt
 ===
+# For different tests, inverse the comments below
+# 40:02
+# 50:24
 40:03
 50:01
