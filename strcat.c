@@ -21,8 +21,11 @@ char *t;
 }
 
 /* Convert string to integer */
-int atoi_ptr(char *s) {
-    int n = 0;
+int atoi_ptr(s)
+char *s;
+{
+    int n;
+    n = 0;
     
     while (*s >= '0' && *s <= '9')
         n = 10 * n + (*s++ - '0');
@@ -31,7 +34,9 @@ int atoi_ptr(char *s) {
 }
 
 /* Reverse string in place */
-void reverse_ptr(char *s) {
+void reverse_ptr(s)
+char *s;
+{
     char c, *p;
     
     for (p = s; *p; p++);
@@ -46,9 +51,13 @@ void reverse_ptr(char *s) {
 }
 
 /* Convert integer to string */
-void itoa_ptr(int n, char *s) {
+void itoa_ptr(n, s)
+int n;
+char *s;
+{
     int sign;
-    char *p = s;
+    char *p;
+    p = s;
     
     if ((sign = n) < 0)
         n = -n;
