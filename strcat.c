@@ -31,19 +31,40 @@ int atoi_ptr(char *s) {
     return n;
 }
 
-void itoa(int n, char s[]) {
-    int i, sign;
+void itoa_ptr(int n, char *s) {
+    int sign;
+    char *p = s;
+    
     if ((sign = n) < 0)
         n = -n;
-    i = 0;
+    
     do {
-        s[i++] = n % 10 + '0';
+        *p++ = n % 10 + '0';
     } while ((n /= 10) > 0);
+    
     if (sign < 0)
-        s[i++] = '-';
-    s[i] = '\0';
-    reverse(s);
+        *p++ = '-';
+    
+    *p = '\0';
+    reverse_ptr(s);
 }
+
+void reverse_ptr(char *s) {
+    char c, *p;
+    
+
+    for (p = s; *p; p++);
+    
+    p--; 
+    
+
+    while (s < p) {
+        c = *s;
+        *s++ = *p;
+        *p-- = c;
+    }
+}
+
 
 
 main()
