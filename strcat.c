@@ -22,12 +22,12 @@ char *t;
 
     return ret;
 }
-
-int atoi(char s[]) {
-    int i, n;
-    n = 0;
-    for (i = 0; s[i] >= '0' && s[i] <= '9'; ++i)
-        n = 10 * n + (s[i] - '0');
+int atoi_ptr(char *s) {
+    int n = 0;
+    
+    while (*s >= '0' && *s <= '9')
+        n = 10 * n + (*s++ - '0');
+    
     return n;
 }
 
