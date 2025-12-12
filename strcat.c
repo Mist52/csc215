@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-/* Concatenate t to end of s, return pointer to s */
+
 char *strcatp(s, t)
 char *s;
 char *t;
@@ -99,7 +99,7 @@ main()
     reverse_ptr(result);
     printf("%s\n", result);
     
-    strcpy(result, "racecar");
+    strcpy(result, "pokemon");
     printf("   Demo 2b: %s -> ", result);
     reverse_ptr(result);
     printf("%s\n\n", result);
