@@ -4,8 +4,7 @@
 
 ## 1. What are the largest and smallest integer values in the programming
 environment you use?
-## 2. Each BigInt object will need to store the digits that represent the BigInt
-value. The decision to allow arbitrarily large BigInt values affects the
+## 2. Each BigInt object will need to store the digits that represent the BigIntvalue. The decision to allow arbitrarily large BigInt values affects the
 choices for storing digits. Name one method for storing digits that will
 permit an arbitrary number of digits to be stored. What effect would
 a limit on the number of digits in a BigInt have in the design of the
@@ -27,3 +26,19 @@ BigInt operator - (const BigInt & big, int small);
 BigInt operator + (const BigInt & big, int small);
 // postcondition: returns big + small
 Write the body of operator! assuming that operator+ has been written.
+
+1. Why is a char vector used to store digits rather than an int vector?
+How will a change in the kind of element stored in the vector affect the
+implementation of all BigInt member functions.
+2. We have chosen an enum for storing the sign of a BigInt. Describe two
+alternatives or types other than an enum that can be used to represent
+the sign of a BigInt.
+5
+3. Write the function GetDigit based on the description and declarations in
+this section. What kinds of error should you worry about?
+4. Why will it be difficult to write the non-member functions operator ==
+and operator < given the current method for accessing digits using
+GetDigit? Write the function operator == for positive BigInt values
+assuming that NumDigits and GetDigit are public member functions.
+5. (optional) Why is the apvector class a much better choice than the
+built-in array type given the specification of the BigInt class?
