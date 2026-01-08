@@ -30,7 +30,22 @@ TEST_CASE("Adding bigints") {
     add(&bi1, &bi2, &biout);
 
     printBigInt(&biout, temp2);
-    ASSERT_STR(temp2, "10123455");
+    ASSERT_STR(temp2, "10123455")
+            char sum_buf[256];
+    char out[256];
+
+    a.digits = a_buf;
+    b.digits = b_buf;
+    sum.digits = sum_buf;
+
+    makeBigInt("1234567", &a);
+    makeBigInt("8888888", &b);
+
+    
+    sum = add_bigints(a, b);
+
+    printBigInt(&sum, out);
+    ASSERT_STR(out, "10123455");
 
 }
     END_TESTING();
