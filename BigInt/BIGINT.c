@@ -32,3 +32,6 @@ struct bigint *num;
    numstr[num->numdigits+start_pos] = '\0';
    return numstr;
 }
+
+
+
