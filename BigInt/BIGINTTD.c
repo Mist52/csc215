@@ -18,6 +18,20 @@ TEST_CASE("Adding bigints") {
     char buffer5[256];
     char buffer6[256];
     char* temp2;
+
+    temp2 = buffer3;
+    bi1.digits = buffer4;
+    bi2.digits = buffer5;
+    biout.digits = buffer6;
+
+    makeBigInt("1234567", &bi1);
+    makeBigInt("8888888", &bi2);
+
+    add(&bi1, &bi2, &biout);
+
+    printBigInt(&biout, temp2);
+    ASSERT_STR(temp2, "10123455");
+
 }
     END_TESTING();
 }
